@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../front/src/pages/CalendarPage.js"],
+  "sourcesContent": ["let gotoPage = window.MHR.gotoPage\nlet goHome = window.MHR.goHome\nlet storage = window.MHR.storage\n\nwindow.MHR.register(\"CalendarPage\", class extends window.MHR.AbstractPage {\n\n    constructor(id) {\n        super(id)\n    }\n\n    enter() {\n        let html = this.html\n        \n\n        var theHtml = html`\n        <div id='calendar'></div>\n        `       \n        this.render(theHtml, true)\n\n        debugger\n        var calendarEl = document.getElementById('calendar');\n        var calendar = new window.FullCalendar.Calendar(calendarEl, {\n          initialView: 'dayGridMonth'\n        });\n        calendar.render()\n    }\n})\n\n\n"],
+  "mappings": ";AAAA,IAAI,WAAW,OAAO,IAAI;AAC1B,IAAI,SAAS,OAAO,IAAI;AACxB,IAAI,UAAU,OAAO,IAAI;AAEzB,OAAO,IAAI,SAAS,gBAAgB,cAAc,OAAO,IAAI,aAAa;AAAA,EAEtE,YAAY,IAAI;AACZ,UAAM,EAAE;AAAA,EACZ;AAAA,EAEA,QAAQ;AACJ,QAAI,OAAO,KAAK;AAGhB,QAAI,UAAU;AAAA;AAAA;AAGd,SAAK,OAAO,SAAS,IAAI;AAEzB;AACA,QAAI,aAAa,SAAS,eAAe,UAAU;AACnD,QAAI,WAAW,IAAI,OAAO,aAAa,SAAS,YAAY;AAAA,MAC1D,aAAa;AAAA,IACf,CAAC;AACD,aAAS,OAAO;AAAA,EACpB;AACJ,CAAC;",
+  "names": []
+}

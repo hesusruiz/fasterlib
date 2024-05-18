@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core@7/dist/ionic/ionic.esm.js"></script>
+    <link rel="stylesheet" href="/ionic.css" />
+    <script src="/css-scope-inline.js"></script>
+    <script src="/surreal.js"></script>
+    <link rel="stylesheet" href="/common.css" />
+
+    <script>
+        // Set here the default home page for the app, before loading app.js
+        window.homePage = "IssuerSignerHome"
+        window.myAppTitle = "Issuer for Signer"
+        // Configure the menu items, with entries like:
+        //    {page:"NameOfPage", text:"Text in menu item", params: object to pass to page}
+        window.menuItems = [
+            { page: "IssuerSignerHome", text: "Home", params: "" },
+            { page: "ListOfferingsPage", text: "List Credential Offers" },
+            { page: "CreateOfferingPage", text: "Create new Credential Offer" },
+            { page: "SelectCamera", text: "Camera" },
+            { page: "LogsPage", text: "Show technical logs" },
+            { page: "ConfirmDeleteAll", text: "Delete ALL credentials" },
+            { page: "ConfirmResetApp", text: "Reset application" },
+            { page: "LogoffPage", text: "Logoff" },
+        ]
+
+        // The pages to preload at initialisation. The rest will be dynamically loaded.
+        window.preloadPages = [
+            "IssuerSignerHome",
+            "ListOfferingsPage",
+            "CreateOfferingPage"
+        ]
+        
+        // The page mapping
+        window.pageModules = {
+  "AuthenticatorPage": "/pages/AuthenticatorPage-ZQ5LL26K.js",
+  "CalendarPage": "/pages/CalendarPage-XEAL5GAJ.js",
+  "ConfirmDeleteAll": "/pages/ConfirmDeleteAll-YZWRJP7Z.js",
+  "ConfirmDeleteCred": "/pages/ConfirmDeleteCred-JYNBUIUF.js",
+  "ConfirmResetApp": "/pages/ConfirmResetApp-SKJLHQBV.js",
+  "CreateOfferingPage": "/pages/CreateOfferingPage-7BF34HBP.js",
+  "DisplayNormalQR": "/pages/DisplayNormalQR-EVDZMEAG.js",
+  "DisplayQR": "/pages/DisplayQR-XTTVI7NE.js",
+  "DisplayVC": "/pages/DisplayVC-HLSLF6UT.js",
+  "IssuerEmployeeHome": "/pages/IssuerEmployeeHome-KTG5SZRF.js",
+  "IssuerLandingPage": "/pages/IssuerLandingPage-J6CFQGFL.js",
+  "IssuerSignerHome": "/pages/IssuerSignerHome-TKT3U7M4.js",
+  "ListOfferingsPage": "/pages/ListOfferingsPage-PMT6XSWQ.js",
+  "LoadAndSaveQRVC": "/pages/LoadAndSaveQRVC-2JEMAUOD.js",
+  "LoadAndVerifyQRVC": "/pages/LoadAndVerifyQRVC-57SFONQA.js",
+  "LogsPage": "/pages/LogsPage-NOGBSL6O.js",
+  "MenuPage": "/pages/MenuPage-GREVDABR.js",
+  "MicroWallet": "/pages/MicroWallet-FFFSAJ7F.js",
+  "SIOPSelectCredential": "/pages/SIOPSelectCredential-6CTVQHY5.js",
+  "SWNotify": "/pages/SWNotify-K5E5X6UX.js",
+  "ScanQrPage": "/pages/ScanQrPage-GOM2FEXG.js",
+  "SelectCamera": "/pages/SelectCamera-6T47SYNE.js",
+  "TestPage": "/pages/TestPage-YCJHA5PC.js"
+}
+
+        window.Ionic = {
+            config: {
+            mode: 'ios',
+            },
+        };
+
+    </script>
+
+    <!-- Load the application -->
+    <!-- <link rel="stylesheet" href="PUT_APP_CSS_NAME_HERE" /> -->
+    <script type="module" src="app-UH6LV4PK.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Private Verifiable Credentials" />
+    <meta name="theme-color" content="#919597">
+    <title>Issuer for Signer</title>
+    <meta itemprop="name" content="Private Verifiable Credentials">
+    <meta itemprop="description" content="Private Verifiable Credentials">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Private Verifiable Credentials">
+    <meta property="og:description"
+        content="Privacy-focused Wallet for Verifiable Credentials">
+    <!-- <link rel="manifest" href="./manifest.webmanifest"> -->
+
+    <link rel="icon" type="image/png" href="./favicon.ico" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Private Verifiable Credentials" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link href="prism.css" rel="stylesheet">
+    <style>
+
+    @font-face {
+        font-family: "Roboto";
+        src: url("./fonts/Roboto-Regular.ttf") format("truetype");
+    }
+    
+    @font-face {
+        font-family: "Roboto";
+        src: url("./fonts/Roboto-Medium.ttf") format("truetype");
+        font-weight: 450 500;
+    }
+
+
+    </style>
+
+</head>
+
+<body class="w3-content">
+
+    <ion-app>
+
+        <ion-header id="the_header" class="half-centered">
+        </ion-header>
+
+        <ion-content id="main-content">
+
+            <main class="half-centered">
+            </main>
+
+        </ion-content>
+    </ion-app>
+
+    <footer>
+    </footer>
+
+    <script src="prism.js"></script>
+</body>
+
+</html>

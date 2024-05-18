@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../front/src/pages/MenuPage.js"],
+  "sourcesContent": ["let gotoPage = window.MHR.gotoPage\nlet goHome = window.MHR.goHome\nlet storage = window.MHR.storage\n\nwindow.MHR.register(\"MenuPage\", class extends window.MHR.AbstractPage {\n\n    constructor(id) {\n        super(id)\n    }\n\n    enter() {\n        let html = this.html\n\n        var menu = html`\n        <ion-list>\n            ${window.\n            // @ts-ignore\n            menuItems.map(\n                ({page, params, text}) => html`\n                <ion-item><ion-label onclick=${()=>{MHR.processPageEntered(MHR.pageNameToClass, page, params)}}><span class=\"text-menu\">${text}</span></ion-label></ion-item>\n            `)}\n        </ion-list>\n        `;\n        \n        this.render(menu, true)\n    }\n})\n"],
+  "mappings": ";AAAA,IAAI,WAAW,OAAO,IAAI;AAC1B,IAAI,SAAS,OAAO,IAAI;AACxB,IAAI,UAAU,OAAO,IAAI;AAEzB,OAAO,IAAI,SAAS,YAAY,cAAc,OAAO,IAAI,aAAa;AAAA,EAElE,YAAY,IAAI;AACZ,UAAM,EAAE;AAAA,EACZ;AAAA,EAEA,QAAQ;AACJ,QAAI,OAAO,KAAK;AAEhB,QAAI,OAAO;AAAA;AAAA,cAEL,OAEF,UAAU;AAAA,MACN,CAAC,EAAC,MAAM,QAAQ,KAAI,MAAM;AAAA,+CACK,MAAI;AAAC,YAAI,mBAAmB,IAAI,iBAAiB,MAAM,MAAM;AAAA,MAAC,CAAC,4BAA4B,IAAI;AAAA;AAAA,IACjI,CAAC;AAAA;AAAA;AAIN,SAAK,OAAO,MAAM,IAAI;AAAA,EAC1B;AACJ,CAAC;",
+  "names": []
+}
